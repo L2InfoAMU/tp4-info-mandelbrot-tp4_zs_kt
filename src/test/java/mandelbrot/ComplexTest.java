@@ -151,4 +151,10 @@ public class ComplexTest {
     void testSubtract() {
         assertEquals(new Complex(-1,0), ZERO.subtract(ONE));
     }
+
+    @Test
+    void testMultiply() {
+        assertEquals(new Complex(0,0), ZERO.multiply(ONE));
+        assertEquals(new Complex(0,2), twoI.multiply(ONE));
+    }
 }
