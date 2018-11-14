@@ -144,6 +144,6 @@ public class ComplexTest {
 
     @Test
     void testAdd() {
-        assertEquals(ONE, ZERO.add(ONE));
+        assertEquals(new Complex(1,0), ZERO.add(ONE));
     }
 }
