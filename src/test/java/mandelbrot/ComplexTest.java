@@ -169,4 +169,11 @@ public class ComplexTest {
     void testModulus() {
         assertEquals(0, ZERO.modulus());
     }
+
+    @Test
+    void testScale() {
+        assertEquals(ZERO, ZERO.scale(2));
+        assertEquals(new Complex(2,0), ONE.scale(2));
+
+    }
 }
