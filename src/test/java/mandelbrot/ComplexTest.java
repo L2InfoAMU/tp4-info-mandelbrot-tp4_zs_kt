@@ -174,6 +174,12 @@ public class ComplexTest {
     void testScale() {
         assertEquals(ZERO, ZERO.scale(2));
         assertEquals(new Complex(2,0), ONE.scale(2));
+    }
+
+    @Test
+    void testEquals(){
+        assertEquals(true, ONE.equals(ONE));
+        assertEquals(false, ZERO.equals(two));
 
     }
 }
